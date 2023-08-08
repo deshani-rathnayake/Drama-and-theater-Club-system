@@ -1,0 +1,55 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Login Page
+    </title>
+
+    <link rel="stylesheet" href="CSS/style1.css">
+    <link rel="stylesheet" href="CSS/nav.css">
+
+<style>
+body{
+    background-image:url("images/loginLeaf.jpg");
+    background-repeat: no-repeat, repeat;
+    background-size: 1520px 1000px;
+  
+}
+
+</style>
+</head>
+<body>
+
+ <nav class="nav">
+        <ul>
+        <a href="Index.html">HOME</a>
+        <a href="AboutUs.html">ABOUT US</a>
+        <a href="Membership.html">MEMBERSHIP</a>
+        <a href="login.html">LOGIN</a>
+        <a href="event.php">EVENTS</a>
+        <a href="newspage.php">NEWS</a>
+        <a href="PHP/logout.php">LOG OUT</a>
+        <a href="login.html">ADMIN</a>
+      
+        </ul>
+      </nav>
+
+
+<div class="login">
+    <h5>Login Information ...</h5>
+<form method="post" action="PHP/login.php">
+            <div class="textbox">
+                <input type="text" name="username" placeholder="Username"  >
+            </div>
+            <div class="textbox">
+                <input type="password" name="password" placeholder="Password">
+            </div>
+            <input type="submit" class="btn" value="Sign In">
+</form>
+</div>
+</body>
+</html>

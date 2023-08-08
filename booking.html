@@ -1,0 +1,75 @@
+
+
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="CSS/membership.css">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="CSS/nav.css">
+   </head>
+<body>
+  <nav class="nav">
+    <ul>
+    <a href="Index.html">HOME</a>
+    <a href="AboutUs.html">ABOUT US</a>
+    <a href="gallery.html">GALLERY</a>
+    <a href="Membership.html">MEMBERSHIP</a>
+    <a href="login.html">LOGIN</a>
+    <a href="event.php">EVENTS</a>
+    <a href="booking.html">EVENTS BOOKING</a>
+    <a href="newspage.php">NEWS</a>
+    <a href="PHP/logout.php">LOG OUT</a>
+    <a href="login.html">ADMIN</a>
+  
+    </ul>
+  </nav>
+  
+  <div class="main">
+    <div class="container">
+      <div class="title">Take Tickets For your Favorite Events </div>
+      <div class="content">
+        <form action="PHP/EventBooking.php" method="post">
+          <div class="user-details">
+            <div class="input-box">
+              <span class="details">Full Name</span>
+              <input type="text" name="name" placeholder="Enter your name" required>
+            </div>
+            <div class="input-box">
+              <span class="details">Email</span>
+              <input type="text" name="email" placeholder="Enter your email" required>
+            </div>
+            <div class="input-box">
+              <span class="details">Phone Number</span>
+              <input type="text" name="phonenumber" placeholder="Enter your number" required>
+            </div>
+            <div class="input-box">
+              <span class="details">Event</span>
+              <input type="text" name="event" placeholder="Enter event name" required>
+            </div>
+            <div class="input-box">
+              <span class="details">Date</span>
+              <input type="date" name="date" placeholder="Enter event date" required>
+            </div>
+            <div class="input-box">
+              <span class="details">Time</span>
+              <input type="time" name="time" placeholder="Enter event time" required>
+            </div>
+            <div class="input-box">
+                <span class="details">Number of tickets</span>
+                <input type="text" name="numoftick" placeholder="Enter number of tickets" required>
+            </div>
+
+          </div>
+
+          <div class="button">
+            <input type="submit" value="Booking Event">
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
